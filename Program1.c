@@ -4,10 +4,14 @@ Ans: 233168*/
 #include<stdio.h>
 int main()
 {
-    int n=0, i; 
-    for (i=0; i<1000; i++)
+    int n=0; 
+    for (int i=0; i<1000; i++)
+    {
     if (i%3==0 || i%5==0) 
-    n=n+i; 
+    {
+    n=n+i;
+    }
+    }
     printf("\n The sum of all the multiples of 3 or 5: %d", n); 
     return 0;
 }
